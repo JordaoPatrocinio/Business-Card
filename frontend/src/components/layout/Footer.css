@@ -1,0 +1,28 @@
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .footer-logo span {
+    font-size: 1.5rem;
+    color: #ff6f00;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-socials a {
+    margin: 0 8px;
+    color: #ffffff;
+  }
+  
+  .footer-bottom {
+    margin-top: 15px;
+  }
+  

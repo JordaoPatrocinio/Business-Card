@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.login-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 3rem;
+  padding: 2rem;
+  flex-wrap: wrap; /* Para tornar responsivo */
+}
+
+.login-content-left, .login-content-right {
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-content-left {
+  text-align: left;
+  align-items: center;
+  align-content: center;
+  order: 1; /* Para garantir que fique embaixo na responsividade */
+}
+
+.login-logo {
+  max-width: 80px; /* Diminuindo o tamanho da logo */
+  margin-bottom: 1.5rem;
+}
+
+.login-info h3 {
+  font-weight: 600;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.login-info p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.login-content-right {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  order: 0; /* Para garantir que fique no topo na responsividade */
+}
+
+.login-content-right h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-field label {
+  font-weight: 500;
+  color: #333;
+  text-align: left; /* Alinhando o label à esquerda */
+  display: block;
+}
+
+.login-field input {
+  padding: 0.75rem;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.login-button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #135cb8;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.login-options label {
+  margin-left: 0.25rem; /* Para aproximar o "Lembrar-me" do checkbox */
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+  color: #1a73e8;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  outline: none; /* Remove o hover */
+}
+
+.login-error {
+  color: red;
+  font-size: 0.9rem;
+}

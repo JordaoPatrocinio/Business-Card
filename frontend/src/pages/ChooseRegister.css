@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.choose-register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: radial-gradient(circle, #e49925, #dbbd90, #dfdddb); /* Gradiente radial */
+}
+
+.choose-register {
+  background-color: #ffffff;
+  padding: 32px 12px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.choose-register h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.choose-register p {
+  color: #666;
+  margin-bottom: 1.1rem;
+}
+
+.choose-register .logo {
+  width: 120px; /* Ajuste o tamanho conforme necessário */
+}
+
+.register-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.register-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.register-button:hover {
+  background-color: #135cb8;
+}

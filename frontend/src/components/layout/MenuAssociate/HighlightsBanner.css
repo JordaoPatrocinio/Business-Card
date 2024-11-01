@@ -1,0 +1,31 @@
+.highlights-banner {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.highlights-banner h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.banner-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.banner-item {
+    flex: 0 0 200px;
+    height: 120px;
+    background-color: #e49925;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+}

@@ -1,0 +1,106 @@
+/* Estilo do menu lateral */
+.dashboard-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 1rem 0;
+    position: fixed;
+    height: 100vh;
+    width: 80px; /* Aumenta a largura para acomodar melhor os itens */
+    background-color: #f0f2f5;
+    transition: transform 0.3s ease, width 0.3s ease;
+    z-index: 100;
+}
+
+.dashboard-menu.open {
+    width: 250px;
+    transform: translateX(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start; /* Alinhamento à esquerda */
+    width: 100%;
+    padding-left: 20px; /* Espaçamento para a logomarca */
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    width: 40px; /* Aumenta o tamanho da logomarca se necessário */
+    height: auto;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-left: 20px; /* Margem para alinhar os ícones à esquerda */
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-left: 20px;
+    margin-top: auto;
+    padding-bottom: 2rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    color: #1a73e8;
+}
+
+.menu-text {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.logout-button {
+    background: none;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: inherit;
+}
+
+.menu-hamburger {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 101;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .dashboard-menu {
+        transform: translateX(-100%);
+    }
+
+    .dashboard-menu.open {
+        transform: translateX(0);
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+}
